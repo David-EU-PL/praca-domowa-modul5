@@ -1,0 +1,102 @@
+@import './normalize.css';
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+::selection {
+	background: #ffbb00;
+	color: #ff0000c7;
+}
+
+.intro {
+	background: url(../images/bghome.png);
+	background-color: #eaece7c5;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+	background-size: 400px;
+	height: 100vh;
+	width: 100%;
+}
+
+.intro__text {
+	font-size: 3.7rem;
+	font-display: left;
+	line-height: 1.5;
+	margin: 0;
+	padding: 7rem 4rem 4rem;
+	text-align: center;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+	.intro {
+		background-position: 80% 50%;
+		position: relative;
+	}
+	.intro__text {
+		font-size: 3rem;
+		left: 2%;
+		padding: 4rem;
+		position: absolute;
+		top: 30%;
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	.intro {
+		background-position: 80% 50%;
+		background-size: auto;
+		position: relative;
+	}
+	.intro__text {
+		font-size: 3.8rem;
+		left: 10%;
+		padding: 4rem;
+		position: absolute;
+		top: 30%;
+		width: 40%;
+	}
+}
+
+.details {
+	margin: 3rem 0;
+}
+
+.details__heading {
+	font-size: 1.5rem;
+	margin-left: 2rem;
+	text-align: center;
+}
+
+.details__list {
+	list-style: none;
+	line-height: 1.5;
+	margin-top: 3rem;
+}
+
+.details__element {
+	font-size: 1.2rem;
+	margin-top: 1.5rem;
+}
+
+.details__element::before {
+	content: '✅';
+	margin-right: 1.2rem;
+}
+
+@media screen and (min-width: 769px) {
+	.details__heading {
+		text-align: left;
+	}
+}
